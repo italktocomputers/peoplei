@@ -18,7 +18,7 @@
 		8736B305229AF27C00F637D5 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8736B304229AF27C00F637D5 /* BottomBar.swift */; };
 		8736B307229B011700F637D5 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8736B306229B011700F637D5 /* ActivityViewController.swift */; };
 		8736B309229C276B00F637D5 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8736B308229C276B00F637D5 /* ActivityCell.swift */; };
-		8736B30B229C27A900F637D5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8736B30A229C27A900F637D5 /* Activity.swift */; };
+		8736B30B229C27A900F637D5 /* UserProfileShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8736B30A229C27A900F637D5 /* UserProfileShort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		8736B304229AF27C00F637D5 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		8736B306229B011700F637D5 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		8736B308229C276B00F637D5 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
-		8736B30A229C27A900F637D5 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		8736B30A229C27A900F637D5 /* UserProfileShort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileShort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 				8736B304229AF27C00F637D5 /* BottomBar.swift */,
 				8736B306229B011700F637D5 /* ActivityViewController.swift */,
 				8736B308229C276B00F637D5 /* ActivityCell.swift */,
-				8736B30A229C27A900F637D5 /* Activity.swift */,
+				8736B30A229C27A900F637D5 /* UserProfileShort.swift */,
 			);
 			path = peoplei;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 				8736B2FD229A327C00F637D5 /* Category.swift in Sources */,
 				8736B309229C276B00F637D5 /* ActivityCell.swift in Sources */,
 				8736B307229B011700F637D5 /* ActivityViewController.swift in Sources */,
-				8736B30B229C27A900F637D5 /* Activity.swift in Sources */,
+				8736B30B229C27A900F637D5 /* UserProfileShort.swift in Sources */,
 				8736B301229A51C200F637D5 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

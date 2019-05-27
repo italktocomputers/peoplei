@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Activity {
+class UserProfileShort {
     var label: String
     var description: String
     var image: UIImage

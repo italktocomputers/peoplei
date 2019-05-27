@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 class ActivityCell : UITableViewCell {
-    required init(activity: Activity) {
+    required init(userProfileShort: UserProfileShort) {
         super.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "")
-        self.textLabel?.text = activity.label
-        self.detailTextLabel?.text = activity.description
-        self.imageView?.image = activity.image
+        self.textLabel?.text = userProfileShort.label
+        self.detailTextLabel?.text = userProfileShort.description
+        self.imageView?.image = userProfileShort.image
     }
     
     required init?(coder aDecoder: NSCoder) {
