@@ -1,8 +1,5 @@
 //
-//  ActivityViewController.swift
-//  peoplei
-//
-//  Created by Andrew Schools on 5/26/19.
+//  Created by Andrew Schools on 5/25/19.
 //  Copyright © 2019 Andrew Schools. All rights reserved.
 //
 
@@ -13,48 +10,14 @@ class ActivityViewController : UIViewController, UITableViewDataSource, UITableV
     var category: Category? = nil
     @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var statusLabel: UILabel!
-    var selectedUserProfile: UserProfileShort? = nil
-    var data: [UserProfileShort] = [
-        UserProfileShort(
-            label: "Andrew Schools",
-            description: "Age 38 | Concord NH",
-            image: UIImage(
-                named: "images/profiles/andrew.png"
-            )!
-        ),
-        UserProfileShort(
-            label: "Laura Schools",
-            description: "Age 31 | Concord NH",
-            image: UIImage(
-                named: "images/profiles/laura.png"
-            )!
-        ),
-        UserProfileShort(
-            label: "Julia Schools",
-            description: "Age 6 | Concord NH",
-            image: UIImage(
-                named: "images/profiles/julia.png"
-            )!
-        ),
-        UserProfileShort(
-            label: "Penny Schools",
-            description: "Age 4 | Concord NH",
-            image: UIImage(
-                named: "images/profiles/penny.png"
-            )!
-        ),
-        UserProfileShort(
-            label: "Declan Schools",
-            description: "Age 2 | Concord NH",
-            image: UIImage(
-                named: "images/profiles/declan.png"
-            )!
-        )
-    ]
+    var selectedUserProfile: UserProfile? = nil
+    var api: ApiProtocol? = nil
+    var data: [UserProfile] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.topItem?.title = category?.label
+        data = api!.getUserProfiles(in: category!)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -66,12 +29,21 @@ class ActivityViewController : UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return ActivityCell(userProfileShort: data[indexPath.item])
+        return ActivityCell(userProfile: data[indexPath.item])
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedUserProfile = data[indexPath.item]
-        //performSegue(withIdentifier: "ActivityToProfile", sender: nil)
+        performSegue(withIdentifier: "ActivityToProfile", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ActivityToProfile" {
+            let profileViewController = segue.destination as! ProfileViewController
+            profileViewController.profile = selectedUserProfile!
+            profileViewController.category = category
+            profileViewController.api = api
+        }
     }
     
     @IBAction func setStatus(_ sender: Any) {

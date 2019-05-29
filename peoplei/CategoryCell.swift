@@ -1,8 +1,5 @@
 //
-//  CategoryCell.swift
-//  peoplei
-//
-//  Created by Andrew Schools on 5/26/19.
+//  Created by Andrew Schools on 5/25/19.
 //  Copyright © 2019 Andrew Schools. All rights reserved.
 //
 

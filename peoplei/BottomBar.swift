@@ -1,8 +1,5 @@
 //
-//  BottomBar.swift
-//  peoplei
-//
-//  Created by Andrew Schools on 5/26/19.
+//  Created by Andrew Schools on 5/25/19.
 //  Copyright © 2019 Andrew Schools. All rights reserved.
 //
 
@@ -15,7 +12,7 @@ class BottomBar : UIToolbar, UIToolbarDelegate {
         self.items?.append(
             UIBarButtonItem(
                 image: UIImage(
-                    named: "images/settings.png"
+                    named: "settings"
                 ),
                 style: UIBarButtonItem.Style.plain,
                 target: nil,
@@ -26,7 +23,7 @@ class BottomBar : UIToolbar, UIToolbarDelegate {
         self.items?.append(
             UIBarButtonItem(
                 image: UIImage(
-                    named: "images/profile.png"
+                    named: "profile"
                 ),
                 style: UIBarButtonItem.Style.plain,
                 target: nil,
@@ -37,7 +34,7 @@ class BottomBar : UIToolbar, UIToolbarDelegate {
         self.items?.append(
             UIBarButtonItem(
                 image: UIImage(
-                    named: "images/help.png"
+                    named: "help"
                 ),
                 style: UIBarButtonItem.Style.plain,
                 target: nil,
@@ -48,7 +45,7 @@ class BottomBar : UIToolbar, UIToolbarDelegate {
         self.items?.append(
             UIBarButtonItem(
                 image: UIImage(
-                    named: "images/messages.png"
+                    named: "messages"
                 ),
                 style: UIBarButtonItem.Style.plain,
                 target: nil,
